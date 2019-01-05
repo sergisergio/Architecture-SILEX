@@ -70,3 +70,22 @@
 - Déclarer le nouveau service AssetServiceProvider dans app/app.php
 - réécriture de la vue avec Bootstrap.
 - suppression Asset car çà ne fonctionnait pas ici et ce n'est pas mon objectif dans ce cours.
+
+***Partie8***
+
+- Mise à jour de la base de données (table Comment avec clé etrangère).
+- Création de la classe Comment dans src/Domain.
+- Création de CommentDAO dans DAO.
+- Création d'une classe abstraite DAO dans DAO dont hériteront ArticleDAO et CommentDAO.
+- Ajout d'une méthode find($id) dans ArticleDAO.
+
+- Création d'un layout.html.twig
+- Asset et Path ne fonctionnant pas: j'ai mis des liens "normaux".
+
+- Mise à jour du contrôleur dans app/app.php pour enregistrer le nouveau service d'accès aux commentaires.
+
+- Ajout d'une nouvelle route  dans app/routes.php.
+
+***Partie9***
+
+

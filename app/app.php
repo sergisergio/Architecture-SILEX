@@ -20,3 +20,8 @@ $app->register(new Silex\Provider\AssetServiceProvider(), array(
 $app['dao.article'] = function ($app) {
     return new MicroCMS\DAO\ArticleDAO($app['db']);
 };
+$app['dao.comment'] = function ($app) {
+    $commentDAO = new MicroCMS\DAO\CommentDAO($app['db']);
+    $commentDAO->setArticleDAO($app['dao.article']);
+    return $commentDAO;
+};
