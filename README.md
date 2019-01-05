@@ -12,3 +12,17 @@
 - Passage à une architecture MVC.
 - Création d'un fichier model.php et view.php.
 - Modification de index.php (qui appelle model et view).
+
+***Partie3***
+
+- Intégration du framework PHP SILEX
+- Récupération de SILEX via Composer
+- Création d'un fichier .gitignore pour exclure le nouveau dossier /vendor.
+- Création des sous-répertoires (app, db, src, views et web).
+- Déplacements des fichiers dans leurs dossiers.
+- Création d'un fichier routes.php dans app.
+- Modification de index.php en tant que contrôleur frontal.
+- Création d'un fichier .htaccess dans le dossier web.
+- Définition d'un hôte virtuel (httpd-vhosts.conf).
+- Activation du virtualhost dans httpd.conf (na pas oublier d'abord localhost puis microcms en mettant le bon chemin relatif).
+- Fichier etc/hosts (définition par 2 fois de 127.0.0.1 en tant que localhost mais aussi microcms.)
