@@ -1,9 +1,8 @@
 <?php
 
 // Home page
-$app->get('/', function () {
-    require '../src/model.php';
-    $articles = getArticles();
+$app->get('/', function () use ($app) {
+    $articles = $app['dao.article']->findAll();
 
     ob_start();             // start buffering HTML output
     require '../views/view.php';
@@ -11,6 +10,6 @@ $app->get('/', function () {
     return $view;
 });
 
-// Silex permet de définir des routes, c'est-à-dire des opints d'netrée dans l'application.
+// Silex permet de définir des routes, c'est-à-dire des points d'entrée dans l'application.
 // A chaque route est associée une réponse construite par notre code.
 // une fonctione qui gère une route est appelée un contrôleur.
