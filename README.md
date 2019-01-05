@@ -54,4 +54,11 @@
 - Modification de views/view.php car les données sont maintenant représentées sous form d'objets.
 - Modification du contrôleur frontal web/index.php.
 
+***Partie6***
 
+- Pour l'instant, pas de templates puis code non sécurisé...
+- Intégration de Twig via composer.
+- Ajout de l'enregistrement de Twig dans app/app.php
+- Mise en place d'un template Twig pour afficher la liste des articles (index.html.twig).
+- Suppression de views/view.php
+- Modification de la route dans app/routes.php pour générer la nouvelle vue.
