@@ -62,3 +62,11 @@
 - Mise en place d'un template Twig pour afficher la liste des articles (index.html.twig).
 - Suppression de views/view.php
 - Modification de la route dans app/routes.php pour générer la nouvelle vue.
+
+***Partie7***
+
+- Installation de Bootstrap et de jQuery.
+- Ajout de composants Symfony (twig-bridge et asset).
+- Déclarer le nouveau service AssetServiceProvider dans app/app.php
+- réécriture de la vue avec Bootstrap.
+- suppression Asset car çà ne fonctionnait pas ici et ce n'est pas mon objectif dans ce cours.
