@@ -2,7 +2,10 @@
     "require": {
         "silex/silex": "~2.0",
         "doctrine/dbal": "~2.5",
-        "twig/twig": "^2.6"
+        "twig/twig": "^2.6",
+        "symfony/twig-bridge": "^4.2",
+        "symfony/security": "^4.2",
+        "symfony/asset": "^4.2"
     },
     "autoload": {
         "psr-4": {"MicroCMS\\": "src"}

@@ -88,4 +88,21 @@
 
 ***Partie9***
 
+- Gestion de la sécurité
+- Ajout de commentaires à un article seulement par les utilisateurs enregistrés.
+- Authentification et autorisation.
+- gestion des mots de passe.
+- Création de la table t_user (voir structure2.sql).
+- Installation du composant Symfony.
 
+- Création de User dans src/Domain.
+- Modification de la classe Comment.
+- Création de UserDAO dans src/DAO.
+
+- Mise à jour du contrôleur dans app/app.php
+
+- Ajout d'une route pour afficher le formulaire d'authentification.
+
+- Modifications des vues (roles, etc...).
+
+- NB: les asset et path fonctionnent avec asset et twig-bridge 4.2...

@@ -12,5 +12,13 @@
     {% else %}
         No comments yet.
     {% endfor %}
+
+    <h3>Add a comment</h3>
+    {% if is_granted('IS_AUTHENTICATED_FULLY') %}
+        Soon!
+    {% else %}
+        <a href="{{ path('login') }}">Log in</a> to add comments.
+    {% endif %}
+
 </p>
 {% endblock %}
