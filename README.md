@@ -121,3 +121,45 @@
 - Modification de article.html.twig.
 - Test ajout commentaire OK.
 
+***Partie11***
+
+- Mise en place d'un back-office.
+- définition d'un rôle admin(voir content2.sql).
+- Mise à jour de app/app/php (role-hierarchy et access_rules).
+- Modification de views/layout.html.twig.
+- Ajout de la route dans app/routes.php.
+- Ajout d'une méthode findAll dans CommentDAO.
+- Ajout d'une méthode findAll dans UserDAO.
+- Composer: ajout de twig/extensions et symfony/validator.
+- Intégration de ces nouveaux composants dans app/app.php.
+- Modification du css pour la partie admin.
+- Création du fichier views/admin.html.twig
+
+- gestion des articles.
+- Création de src/Form/Type/ArticleType.php
+- Création de views/article_form.html.twig
+- Modification de src/DAO/ArticleDAO.php pour y ajouter les méthodes de sauvegarde et de suppression d'un article.
+- Modification de CommentDAO (si on supprime un article, les commentaires doivent être supprimés).
+- Ajout des routes dans app/routes.php.
+- Test d'ajout d'un article OK.
+- Test de modification d'un article OK.
+- Test de suppression d'un article OK.
+
+- gestion des commentaires.
+- Création d'un fichier views/comment_form.html.twig.
+- Modification de views/admin.html.twig.
+- Modification de src/DAO/CommentDAO.php.
+- Ajout des contrôleurs dans app/routes.php.
+- Ajout commentaire OK.
+- Modification commentaire OK.
+- Suppression commentaire OK.
+
+- gestion des utilisateurs.
+- Création de src/Form/Type/UserType.php
+- Création d'une vue user_form.html.twig
+- Modification d'admin.html.twig
+- Ajout des méthodes de modification et de suppression dans UserDAO.
+- Modification de CommentDAO(supprimer tous les commentaires liés à un utilisateur)
+- Ajout des use et contrôleurs dans app/routes.php
+- Ajout, Modification et suppression d'un utilisateur OK.
+
