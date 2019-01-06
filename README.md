@@ -204,3 +204,41 @@
 - Il faudra utiliser le fichier app/config/prod.php à la place de app/config/dev.php dans le contrôleur frontal web/index.php
 - Sur le serveur de production, il faudra installer les dépendances avec l'option --no-dev (composer install --no-dev)
 
+***Partie14***
+
+- Ajout d'une API JSON
+- Interface offerte par une application à destination d'autres applications. Une API exposée via le protocole HTTP(S) est appelée un service web.
+- Fonctionnalités: consultation, ajout, suppression d'un article.
+- Modification de app/routes.php
+- Affichage via http://microcms/api/articles
+- Installation de jsonview pour chrome pour afficher le JSON (sinon utiliser Postman).
+- Entêtes de la réponse HTTP = code 200
+- format: application/json
+
+- création de l'API de modification
+- Modification de app/routes.xml et de app/app.xml
+- On peut ajouter un article via http://microcms/api/article
+- Méthode POST et application/json (remplir le JSON dans le body)
+- Code 201
+
+- Suppression de l'article via http://microcms/api/article/5
+- Méthode DELETE
+- Code 204
+
+- Mise à jour des test fonctionnels en rajoutant 2 adresses API.
+- 11 tests OK via vendor/bin/phpunit.
+
+***Partie15***
+
+- Réorganisation des contrôleurs (car tout est centralisé dans app/routes.php).
+- Les contrôleurs vont devenir des méthodes définies dans des classes.
+- Création du dossier src/Controller
+- Création du fichier HomeController (Accueil) et déplacement de méthodes.
+- Création du fichier AdminController.
+- Création du fichier APIController.
+- réécriture des routes
+- Lancement des tests fonctionnels pour vérification: tests OK
+
+
+
+
