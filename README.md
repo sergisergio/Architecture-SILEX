@@ -163,3 +163,44 @@
 - Ajout des use et contrôleurs dans app/routes.php
 - Ajout, Modification et suppression d'un utilisateur OK.
 
+***Partie12***
+
+- Durant la phase d'authentification, l'utilisateur s'identifie auprès de l'application. Celle-ci tente ensuite de le reconnaître. Ensuite, l'application détermine si l'utilisateur reconnu peut accéder à la ressource demandée: c'est la pahase d'autorisation.
+- Un pare-feu permet de déterminer si un utilisateur doit être authentifié et de débuter le processus d'authentification/autorisation.
+- Les algorithmes de hachage étant unidirectionnels, il n'existe aucune possibilité de revenir au mot de passe initial.
+- En ajoutant des données au mot de passe avant son cryptage, le salage diminue le risque de réussite d'une attaque par dictionnaire.
+- L'interface UserProviderInterface regroupe les déclarations des méthodes à redéfinir pour récupérer les données des utilisateurs depuis une source externe (BDD, etc...).
+- Centraliser la définition du formulaire dans une classe permet d'optimiser l'organisation et la réutilisabilité.
+- La méthode $app->match permet de gérer tous les types de requêtes HTTP (GET, POST, PUT, etc). Elle est utile pour la gestion des formulaires, qui peuvent être affichés (GET) ou soumis (POST).
+- On appelle parfois front-office la partie de l'application en contact direct avec ses utilisateurs. Le back-office est l'interface d'administration.
+- Symfony gère nativement la notion de rôle. C'est le rôle d'un utilisateur qui permet de déduire ses droits d'accès aux ressources de l'application.
+- Si on utilise le type de champ repeated dans la définition du formumaire, Symfony vérifiera automatiquement que les deux saisies correspondent.
+
+***Partie13***
+
+- Préparation pour la production.
+- Ajout de phpunit, browser-kit et css-selector
+- Création à la racine du dossier tests/Tests
+- Ajout de AppTest.php
+- Ajout d'un fichier phpunit.xml.dist à la racine.
+- Modification du fichier app/config/dev.php
+- vendor/bin/phpunit (tests OK).
+
+- Journalisation.
+- Ajout de monolog-bridge
+- Modification de app/config/prod.php
+- Modification de app/config/dev.php
+- Modification de app/app.php.
+- Les évènements seront enregistrés dans var/logs/microcms.log
+- La barre d'outils Symfony ne sera activée que si on utilise app/config/dev.php
+- Création du dossier var/logs.
+- A présent, le fichier var/logs/microcms.log enregistre les principaux évènements de l'application.
+
+- Gestion des erreurs
+- Modification du fichier app/app.php
+- Création du fichier views/error.html.twig
+
+- Mise en production
+- Il faudra utiliser le fichier app/config/prod.php à la place de app/config/dev.php dans le contrôleur frontal web/index.php
+- Sur le serveur de production, il faudra installer les dépendances avec l'option --no-dev (composer install --no-dev)
+

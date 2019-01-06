@@ -10,7 +10,11 @@
         "symfony/config": "^4.2",
         "symfony/translation": "^4.2",
         "twig/extensions": "^1.5",
-        "symfony/validator": "^4.2"
+        "symfony/validator": "^4.2",
+        "phpunit/phpunit": "^7.5",
+        "symfony/browser-kit": "^4.2",
+        "symfony/css-selector": "^4.2",
+        "symfony/monolog-bridge": "^4.2"
     },
     "autoload": {
         "psr-4": {"MicroCMS\\": "src"}
