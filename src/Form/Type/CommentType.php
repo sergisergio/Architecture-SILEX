@@ -17,7 +17,7 @@ class CommentType extends AbstractType
                     'label'       => 'Your comment',
                     'required'    => true,
                     'constraints' => new Assert\NotBlank(),
-                ])
+                ]);
                 /*->add('email', EmailType::class, [
                     'label'           => 'Votre eMail ',
                     'attr'            => ['placeholder' => '(ne sera pas publié)'],
