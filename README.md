@@ -239,6 +239,70 @@
 - réécriture des routes
 - Lancement des tests fonctionnels pour vérification: tests OK
 
+***Partie16***
+
+- Génération des formulaires qui utilisent les styles CSS de Bootstrap.
+- Modification de views/article_form.html.twig
+- Mise en place des contraintes.
+- Vérification du service ValidatorServiceProvider dans app.php
+- Modification de articleType.php et de CommentType.php
+- NB: problème sur CommentType. je n'ai laissé que le content et commenté le reste...
+
+***Partie17***
+
+- Résumé
+- Séparation des responsabilités selon le principe MVC.
+- intégration du micro-framework Silex.
+- modélisation objet du domaine et de l'accès aux données.
+- utilisation de namespaces et autoload des classes grâce à Composer.
+- intégration du moteur de templates Twig.
+- utilisation du framework Bootstrap.
+- gestion avancée de la sécurité et des formulaires.
+- back-office d'administration.
+- tests fonctionnels automatisés utilisant PHPUnit.
+- journalisation et gestion des erreurs.
+- API utilisant le format JSON.
+- Validation des formulaires.
+- Qualité: SensioLabsInsight, Codacy, CodeClimate, Scrutinizer...
+- Aller plus loin: internationalisation, Laravel, Symfony...
+
+***Partie 18***
+
+- Contrairement à un test unitaire qui s'intéresse à un seul élément de l'application, un test fonctionnel valide uen fonctionnalité globale.
+- La librairie PHPUnit consiste le standard pour automatiser des tests unitaires ou fonctionnels en PHP.
+- Les méthodes dont le nom commence par "test" sont identifiées par PHPUnit comme des méthodes de test et exécutées automatiquement.
+- L'entrée require-dev d'un fichier composer.json permet de regrouper les dépendances uniquement liées au développement.
+- En phase de production, produire trop d'évènements de jorunalisation risque de diminuer les performances d'une application. Cependant, elle doit produire des évènements de jorunalisation lorsque des problèmes apparaissent, afin d'aider au débogage.
+- Une API (Application Programming Interface) permet un accès programmatique aux services offerts par une application.
+- Le format JSON (Javascript Objet Notation), plus simple à utiliser, a détrôné XML comme standard pour les échanges de données entre applications web.
+- On peut définir des contrôleurs sous forme de méthodes dans n'importe quelle classe, sans besoin d'hériter d'une classe particulière.
+
+***NotaBENE***
+
+1) Après la partie 8, donc avant la partie sécurité, il y a une activité :
+- Afficher des informations sur des livres à partir d'une base de données fournie.
+- Page d'accueil avec la liste des livres. Page de détail d'un livre.
+- Utilisation sans aucune modification des scripts SQL fournis pour la BDD .
+- Respect de l'architecture: domaine, DAO, contrôleur frontal.
+- Qualité du code.
+- Code source initial : https://github.com/bpesquet/OC-MyBooks
+- Forker puis cloner, créer la BDD, faire les 2 fonctionnalités.
+
+2) A la fin du cours, il y a une deuxième activité :
+- Enrichir une application web existante.
+- Code source initial : https://github.com/bpesquet/OC-WebLinks
+- Afficher des liens web comme reddit
+- Fonctionnalités demandées : correction des imperfections de l'application initiale, possibilité pour un utilisateur connecté de soumettre un nouveu lien web.
+- back-office d'administration affichant les listes des liens et des utilisateurs, édition et suppression d'un lien ou d'un utilisateur dans le back-office, API JSON de consultation de la liste des liens(/api/links) et des détails sur un lien(/api/link/{id}), test focntionnels automatisés des URL de consultation (6 URL à tester), journalisation et gestion des erreurs, contrôleurs écrits sous forme de classes.
+- Utilisation sans aucune modification des scripts SQL fournis pour la BDD.
+- respect de l'architecture.
+- L'acc§s aux URL /link/submit et /admin doit être soumis à la possession par l'utilisateur du rôle adéquat.
+- Qualité du code.
+- Forker puis cloner, créer la BDD, hôte virtuel, fonctionnalités demandées.
+- exemple en ligne: https://oc-weblinks.herokuapp.com/
+
+
+
 
 
 
