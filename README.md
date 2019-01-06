@@ -106,3 +106,18 @@
 - Modifications des vues (roles, etc...).
 
 - NB: les asset et path fonctionnent avec asset et twig-bridge 4.2...
+
+***Partie10***
+
+- Ajout de commentaires à un article.
+- Ajout d'un formulaire dans la vue qui affiche les détails sur un article.
+- Utilisation du composant Form (créer un formulaire web à partir d'un objet).
+- composer: ajout de form, translation et config.(MAJ 4.2)
+- Création d'un dossier src/Form/Type.
+- Ajout d'un nouveau fichier CommentType.
+- Modification de la classe CommentDAO.
+- Enregistrement des nouveaux fournisseurs de services dans app/app.php
+- Mise à jour du fichier app/routes.php pour créer le formulaire d'ajout d'un commentaire.
+- Modification de article.html.twig.
+- Test ajout commentaire OK.
+
